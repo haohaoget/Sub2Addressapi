@@ -53,7 +53,7 @@ export default {
           throw new Error(`${subs}: Network response was not ok: ${response.status} ${response.statusText}`);
         }
         const content = await response.text();
-        const decodedContent = atob(content); // Base64 decoding
+        const decodedContent = decodeURI(atob(content)); // Base64 decoding
         //console.log("Decoded content:", decodedContent);
         const newaddressapi = extractInfo(decodedContent);
         addressapi = addressapi.concat(newaddressapi);
