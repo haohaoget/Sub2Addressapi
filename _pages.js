@@ -16,6 +16,7 @@ function extractInfo(encodedUrls) {
       const port = match[2];
       const hashIndex = line.indexOf('#');
       const name = hashIndex !== -1 ? line.slice(hashIndex + 1) : '';
+      
       //名字重复的取前2个
       const count = nameTemp.reduce((total, item) => (item === name ? total + 1 : total), 0);
       if (count == 0) {
