@@ -17,7 +17,7 @@ function extractInfo(encodedUrls) {
       const port = match[2];
       const hashIndex = line.indexOf('#');
       const name = hashIndex !== -1 ? line.slice(hashIndex + 1) : '';
-      //包含中文字符跳过
+      //包含中文字符(一般有广告)跳过
       if (/[\u4e00-\u9fa5]/.test(name)){
         continue;
       }
@@ -59,7 +59,7 @@ export default {
 		try {
       for (const subs of sub) {
         //console.log("subs content:", subs);
-        const response = await fetch(`https://${subs}/sub?host=${hostName}&uuid=${userID}&edgetunnel=cmliu`);
+        const response = await fetch(`https://${subs}/sub?host=${hostName}&uuid=${userID}&path=?ed2048&edgetunnel=cmliu`);
         if (!response.ok) {
           continue;
         }
@@ -68,7 +68,7 @@ export default {
         if (!content.length || content.length % 4 !== 0 || /[^A-Z0-9+\/=]/i.test(content)) {
           continue;
         }
-        console.log("content:", content);
+        //console.log("content:", content);
         const decodedContent = decodeURI(atob(content)); // Base64 decoding
         //console.log("Decoded content:", decodedContent);
         const newaddressapi = extractInfo(decodedContent);
