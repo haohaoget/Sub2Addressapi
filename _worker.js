@@ -16,7 +16,10 @@ function extractInfo(encodedUrls) {
       const port = match[2];
       const hashIndex = line.indexOf('#');
       const name = hashIndex !== -1 ? line.slice(hashIndex + 1) : '';
-      
+      //包含中文字符跳过
+      if (/[\u4e00-\u9fa5]/.test(name)){
+        continue;
+      }
       //名字重复的取前2个
       const count = nameTemp.reduce((total, item) => (item === name ? total + 1 : total), 0);
       if (count == 0) {
@@ -50,7 +53,7 @@ export default {
         //console.log("subs content:", subs);
         const response = await fetch(`https://${subs}/sub?host=${hostName}&uuid=${userID}&edgetunnel=cmliu`);
         if (!response.ok) {
-          throw new Error(`${subs}: Network response was not ok: ${response.status} ${response.statusText}`);
+          continue;
         }
         const content = await response.text();
         const decodedContent = decodeURI(atob(content)); // Base64 decoding
@@ -58,12 +61,14 @@ export default {
         const newaddressapi = extractInfo(decodedContent);
         addressapi = addressapi.concat(newaddressapi);
       }
-
-      const Raddressapi = addressapi.join("\n");
-      return new Response(Raddressapi, {
-        status: 200,
-        headers: { 'content-type': 'text/plain; charset=utf-8' },
+      if (addressapi.length >= 0){
+        const Raddressapi = addressapi.join("\n");
+        return new Response(Raddressapi, {
+          status: 200,
+          headers: { 'content-type': 'text/plain; charset=utf-8' },
         });
+      }
+      
 		} catch (err) {
 			/** @type {Error} */ let e = err;
 			return new Response(e.toString());
