@@ -55,6 +55,7 @@ export default {
     sub = url.searchParams.get('sub') ? url.searchParams.get('sub').split(",") : sub;
     
     let addressapi = [];
+    ip = [];
 
 		try {
       for (const subs of sub) {
