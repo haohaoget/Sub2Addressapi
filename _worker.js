@@ -3,6 +3,7 @@ import { connect } from 'cloudflare:sockets';
 let sub = ['cm.git.cloudns.biz'];
 const hostName = 'test.xyz';
 const userID = '90cd4a77-141a-43c9-991b-08263cfe9c10';
+let ip = [];
 
 function extractInfo(encodedUrls) {
   const lines = encodedUrls.split('\n');
@@ -20,14 +21,21 @@ function extractInfo(encodedUrls) {
       if (/[\u4e00-\u9fa5]/.test(name)){
         continue;
       }
+      //去掉ip重复
+      const ipcount = ip.reduce((total, item) => (item === ipAddress ? total + 1 : total), 0);
+      if (ipcount > 0){
+        continue;
+      }
       //名字重复的取前2个
       const count = nameTemp.reduce((total, item) => (item === name ? total + 1 : total), 0);
       if (count == 0) {
         extractedData.push(`${ipAddress}:${port}#${name}`);
         nameTemp.push(name);
+        ip.push(ipAddress);
       }else if(count < 2){
         extractedData.push(`${ipAddress}:${port}#${name}-${count}`);
         nameTemp.push(name);
+        ip.push(ipAddress);
       }
       //总数不超过15个(自取前15个)
       if(nameTemp.length >= 15){
@@ -56,6 +64,11 @@ export default {
           continue;
         }
         const content = await response.text();
+
+        if (!content.length || content.length % 4 !== 0 || /[^A-Z0-9+\/=]/i.test(content)) {
+          continue;
+        }
+        console.log("content:", content);
         const decodedContent = decodeURI(atob(content)); // Base64 decoding
         //console.log("Decoded content:", decodedContent);
         const newaddressapi = extractInfo(decodedContent);
