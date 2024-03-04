@@ -38,7 +38,7 @@ function extractInfo(encodedUrls) {
         ip.push(ipAddress);
       }
       //总数不超过15个(自取前15个)
-      if(nameTemp.length >= 15){
+      if(nameTemp.length >= 12){
         return extractedData;
       }
       
