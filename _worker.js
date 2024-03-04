@@ -1,21 +1,31 @@
-// @ts-ignore
-import { connect } from 'cloudflare:sockets';
+
 let sub = ['cm.git.cloudns.biz'];
 const hostName = 'test.xyz';
 const userID = '90cd4a77-141a-43c9-991b-08263cfe9c10';
-let ip = [];
+const ipSet = new Set();
+
+// 随机选取 n 个元素
+function randomSample(arr, n) {
+  const shuffled = Array.from(arr);
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, n);
+}
 
 function extractInfo(encodedUrls) {
-  const lines = encodedUrls.split('\n');
+  let lines = encodedUrls.split('\n');
   const extractedData = [];
-  const ipSet = new Set();
+
   const nameCountMap = new Map();
+  //抽奖
+  lines = lines.length > 20 ? randomSample(lines, 20) : lines;
 
   for (const line of lines) {
     const match = line.match(/@([\d.]+):(\d+)\?/);
     if (match) {
-      const ipAddress = match[1];
-      const port = match[2];
+      const [_, ipAddress, port] = match;
       const hashIndex = line.indexOf('#');
       const name = hashIndex !== -1 ? line.slice(hashIndex + 1) : '';
 
@@ -28,13 +38,14 @@ function extractInfo(encodedUrls) {
       if (ipSet.has(ipAddress)) {
         continue;
       }
-      ipSet.add(ipAddress);
+      
 
       // 统计名字出现的次数
       const count = nameCountMap.get(name) || 0;
       if (count < 2) {
         const newName = count === 0 ? name : `${name}-${count}`;
         extractedData.push(`${ipAddress}:${port}#${newName}`);
+        ipSet.add(ipAddress);
         nameCountMap.set(name, count + 1);
       }
 
@@ -49,14 +60,14 @@ function extractInfo(encodedUrls) {
 }
 
 export default {
-	async fetch(request, env, ctx) {
+	async fetch(request, env) {
     const url = new URL(request.url);
     sub = env.SUB ? env.SUB.split(",") : sub;
-    sub = url.searchParams.get('sub') ? url.searchParams.get('sub').split(",") : sub;
+    const subQueryParam = url.searchParams.get('sub');
+    sub = subQueryParam ? subQueryParam.split(",") : sub;
     
     let addressapi = [];
-    ip = [];
-
+    ipSet.clear();
 		try {
       await Promise.all(sub.map(async (subs) => {
         const response = await fetch(`https://${subs}/sub?host=${hostName}&uuid=${userID}&path=?ed2048&edgetunnel=cmliu`);
@@ -81,7 +92,8 @@ export default {
       }
       
 		} catch (err) {
-			/** @type {Error} */ let e = err;
+			/** @type {Error} */ 
+      let e = err;
 			return new Response(e.toString());
 		}
 	},
