@@ -1,0 +1,13 @@
+192.169.127.184:443#zenlayer日本电信gia
+195.85.59.29:443#cfgameip
+ip.sb:443#ip.sb
+cf.090227.xyz:443#cm-cf
+cn.azhz.eu.org:443#cn.azhz.eu.org
+bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
+##bestproxy.onecf.eu.org:8080#bestproxy.onecf.eu.org
+104.17.25.1:443#cmi1
+104.18.90.56:443#cmi2
+104.19.46.145:443#cmi3
+104.16.249.251:443#cmi4
+103.160.204.247:8443#103-1
+103.200.112.108:8443#103-2
