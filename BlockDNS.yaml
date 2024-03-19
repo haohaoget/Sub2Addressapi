@@ -1,0 +1,26 @@
+# NAME: BlockDNS
+# AUTHOR: haohaoget
+# REPO: https://github.com/haohaoget/Sub2Addressapi
+# UPDATED: 2024-03-19 09:25:10
+# DOMAIN: 12
+# IP-CIDR: 6
+# TOTAL: 18
+payload:
+  - DOMAIN,1dot1dot1dot1.cloudflare-dns.com
+  - DOMAIN,8888.google
+  - DOMAIN,chrome.cloudflare-dns.com
+  - DOMAIN,cloudflare-dns.com
+  - DOMAIN,dns.google
+  - DOMAIN,dns.google.com
+  - DOMAIN,dns.quad9.net
+  - DOMAIN,dns10.quad9.net
+  - DOMAIN,dns11.quad9.net
+  - DOMAIN,dns9.quad9.net
+  - DOMAIN,doh.pub
+  - DOMAIN,one.one.one.one
+  - IP-CIDR,1.1.1.1/32
+  - IP-CIDR,1.0.0.1/32
+  - IP-CIDR,8.8.4.4/32
+  - IP-CIDR,8.8.8.8/32
+  - IP-CIDR,9.9.9.9/32
+  - IP-CIDR,149.112.112.112/32
