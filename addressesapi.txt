@@ -5,7 +5,7 @@ visa.cn:443#visa.cn
 cf.090227.xyz:443#cm-cf
 cn.azhz.eu.org:443#cn.azhz.eu.org
 bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
-yx.887141.xyz:8443#yx.887141.xyz
+cf.0sm.com:8443#cf.0sm.com
 cloudflare.182682.xyz:8443#cloudflare.182682.xyz
 ##bestproxy.onecf.eu.org:8080#bestproxy.onecf.eu.org
 ##104.17.25.1:443#cmi1
