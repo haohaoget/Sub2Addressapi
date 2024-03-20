@@ -6,11 +6,12 @@ cf.090227.xyz:443#cm-cf
 cn.azhz.eu.org:443#cn.azhz.eu.org
 bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
 yx.887141.xyz:8443#yx.887141.xyz
+cloudflare.182682.xyz:8443#cloudflare.182682.xyz
 ##bestproxy.onecf.eu.org:8080#bestproxy.onecf.eu.org
-104.17.25.1:443#cmi1
-104.18.90.56:443#cmi2
-104.19.46.145:443#cmi3
-104.16.249.251:443#cmi4
+##104.17.25.1:443#cmi1
+##104.18.90.56:443#cmi2
+##104.19.46.145:443#cmi3
+##104.16.249.251:443#cmi4
 103.160.204.247:8443#103-1
 [2606:4700::]:8443#ipv6-cf
 [2606:4700:9ad4:5e9a:06b9:7a2c:4a10:5075]:8080#ipv6-cm
