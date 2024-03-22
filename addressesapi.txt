@@ -1,9 +1,8 @@
 ##192.169.127.184:443#zenlayer日本电信gia
-195.85.59.29:443#cfgameip
-ip.sb:443#ip.sb
-visa.cn:443#visa.cn
-cf.090227.xyz:443#cm-cf
-cn.azhz.eu.org:443#cn.azhz.eu.org
+www.csgo.com:8443#csgo
+ip.sb:8443#ip.sb
+visa.cn:8443#visa.cn
+cf.090227.xyz:443#cmliu-cf
 bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
 cf.0sm.com:8443#cf.0sm.com
 cloudflare.182682.xyz:8443#cloudflare.182682.xyz
@@ -12,8 +11,8 @@ cloudflare.182682.xyz:8443#cloudflare.182682.xyz
 ##104.18.90.56:443#cmi2
 ##104.19.46.145:443#cmi3
 ##104.16.249.251:443#cmi4
-103.160.204.247:8443#103-1
-[2606:4700::]:8443#ipv6-cf
-[2606:4700:9ad4:5e9a:06b9:7a2c:4a10:5075]:8080#ipv6-cm
-[2606:4700:134:2232:6a6f:270d:17b5:4907]:8443#ipv6-ct
-[2606:4700:3031:1198:76bd:08be:5613:64f0]:8443#ipv6-cn
+##103.160.204.247:8443#103-1
+##[2606:4700::]:8443#ipv6-cf
+##[2606:4700:9ad4:5e9a:06b9:7a2c:4a10:5075]:8080#ipv6-cm
+##[2606:4700:134:2232:6a6f:270d:17b5:4907]:8443#ipv6-ct
+##[2606:4700:3031:1198:76bd:08be:5613:64f0]:8443#ipv6-cn
