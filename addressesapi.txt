@@ -5,8 +5,8 @@ visa.cn:8443#visa.cn
 cf.090227.xyz:443#cmliu-cf
 bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
 cf.0sm.com:8443#cf.0sm.com
-cloudflare.182682.xyz:8443#cloudflare.182682.xyz
-bestproxy.onecf.eu.org:8443#bestproxy.onecf.eu.org
+154.197.80.176:2096#154.197.80.176
+##bestproxy.onecf.eu.org:8443#bestproxy.onecf.eu.org
 ##104.17.25.1:443#cmi1
 ##104.18.90.56:443#cmi2
 ##104.19.46.145:443#cmi3
