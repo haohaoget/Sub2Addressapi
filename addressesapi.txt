@@ -1,11 +1,14 @@
 ##192.169.127.184:443#zenlayer日本电信gia
+154.197.75.86:2096#cloudinnovation1
+154.197.80.253:2096#cloudinnovation2
+154.197.88.124:2096#cloudinnovation3
+154.197.121.97:2096#cloudinnovation4
 www.csgo.com:8443#csgo
 ip.sb:8443#ip.sb
 visa.cn:8443#visa.cn
 cf.090227.xyz:443#cmliu-cf
 bestcf.onecf.eu.org:8443#bestcf.onecf.eu.org
 cf.0sm.com:8443#cf.0sm.com
-154.197.80.176:2096#154.197.80.176
 ##bestproxy.onecf.eu.org:8443#bestproxy.onecf.eu.org
 ##104.17.25.1:443#cmi1
 ##104.18.90.56:443#cmi2
