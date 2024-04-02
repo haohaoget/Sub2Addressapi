@@ -6,7 +6,6 @@
 89.116.250.92:443#cf5
 185.176.26.133:443#cf6
 cf.0sm.com:8443#cf.0sm.com
-www.sciencedirect.com:443#sciencedirect
 ##www.csgo.com:8443#csgo
 ##ip.sb:8443#ip.sb
 ##visa.cn:8443#visa.cn
