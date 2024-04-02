@@ -21,3 +21,52 @@ cf.0sm.com:8443#cf.0sm.com
 ##[2606:4700:9ad4:5e9a:06b9:7a2c:4a10:5075]:8080#ipv6-cm
 ##[2606:4700:134:2232:6a6f:270d:17b5:4907]:8443#ipv6-ct
 ##[2606:4700:3031:1198:76bd:08be:5613:64f0]:8443#ipv6-cn
+//返回cf官方ip端口
+let cfAddressesapi = env.CFADDRESSSAPI ? env.CFADDRESSSAPI.split(",") : ['https://raw.githubusercontent.com/haohaoget/Vless2sub/main/addressesapi.txt'];
+//console.log(cfAddressesapi);
+//获取ip地址文本
+for (let apiUrl of cfAddressesapi) {
+  try {
+    
+    const response = await fetch(apiUrl);
+  
+    if (!response.ok) {
+      console.error('获取地址时出错:', response.status, response.statusText);
+      continue;
+    }
+  
+    const text = await response.text();
+    const cflines = text.split('\n');
+    //console.log(text);
+    //ipv4或ipv6域名识别
+    const addressRegex = /^((?:\d{1,3}\.){3}\d{1,3}|\[([\da-f:]+)\]|(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}):(\d+)#(.*)$/i;
+    
+    cflines.map(line => {
+      const match = line.match(addressRegex);
+      if (match){
+        const [, ipv4OrDomain, ipv6, port, name] = match;
+        const ipOrDomain = ipv6 ? `[${ipv6}]` : ipv4OrDomain;
+        const addressid = name;
+        if (ntlsports.includes(port)){
+          const vlessLink = `vless://${uuid}@${ipOrDomain}:${port}?encryption=none&flow=&security=none&fp=random&type=ws&host=${host}&path=/=2048#${addressid}`;
+          vlessLinks.push(vlessLink);
+        }else{
+          const vlessLink = `vless://${uuid}@${ipOrDomain}:${port}?encryption=none&security=tls&sni=${cfpagehost}&fp=random&type=ws&host=${cfpagehost}&path=/proxyIP=proxyip.fxxk.dedyn.io#${addressid}`;
+          vlessLinks.push(vlessLink);
+        }
+        //console.log(`地址：${ipOrDomain}，端口：${port}，名称：${addressid}`);
+      } else {
+        //console.log(`无效的地址：${line}`);
+      }
+    
+    });
+    
+
+  } catch (error) {
+    console.error('获取地址时出错:', error);
+    return new Response(`Error: ${error.message}`, {
+      status: 500,
+      headers: { 'content-type': 'text/plain; charset=utf-8' },
+    })
+  }
+}
