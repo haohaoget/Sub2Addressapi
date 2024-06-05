@@ -1,0 +1,16 @@
+# NAME: Proxy-others
+# AUTHOR: haohaoget
+# REPO: https://github.com/haohaoget/Sub2Addressapi
+# UPDATED: 2024-06-05 09:25:10
+# DOMAIN: 7
+# IP-CIDR: 1
+# TOTAL: 8
+payload:
+  - DOMAIN-SUFFIX,editorialmanager.com
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,services.googleapis.cn
+  - DOMAIN-SUFFIX,annas-archive.org
+  - DOMAIN-SUFFIX,msftstatic.com  
+  - DOMAIN-SUFFIX,nelreports.net
+  - DOMAIN-SUFFIX,nelreports.net
+  - IP-CIDR,13.94.47.0/24
