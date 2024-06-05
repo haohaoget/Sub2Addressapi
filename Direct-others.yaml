@@ -2,9 +2,9 @@
 # AUTHOR: haohaoget
 # REPO: https://github.com/haohaoget/Sub2Addressapi
 # UPDATED: 2024-06-05 09:25:10
-# DOMAIN: 3
+# DOMAIN: 4
 # IP-CIDR: 0
-# TOTAL: 3
+# TOTAL: 4
 payload:
   - DOMAIN-KEYWORD,tailscale
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
