@@ -1,0 +1,11 @@
+# NAME: Direct-others
+# AUTHOR: haohaoget
+# REPO: https://github.com/haohaoget/Sub2Addressapi
+# UPDATED: 2024-06-05 09:25:10
+# DOMAIN: 3
+# IP-CIDR: 0
+# TOTAL: 3
+payload:
+  - DOMAIN-KEYWORD,tailscale、
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+  - DOMAIN-SUFFIX,clarivate.com
