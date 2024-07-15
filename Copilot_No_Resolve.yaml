@@ -1,13 +1,13 @@
 # NAME: Copilot
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-07-14 
+# UPDATED: 2024-07-15 
 # DOMAIN: 20
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 26
 # IP-ASN: 2
 # IP-CIDR: 2
-# TOTAL: 51
+# TOTAL: 57
 payload:
   - DOMAIN,access-point.cloudmessaging.edge.microsoft.com
   - DOMAIN,sydney.bing.com
