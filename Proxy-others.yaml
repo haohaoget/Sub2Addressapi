@@ -15,4 +15,6 @@ payload:
   - DOMAIN-SUFFIX,msftstatic.com  
   - DOMAIN-SUFFIX,nelreports.net
   - DOMAIN-SUFFIX,scottplot.net
+  - DOMAIN-SUFFIX,mius.uk
+  - DOMAIN-SUFFIX,imetyou.top
   - IP-CIDR,13.94.47.0/24
