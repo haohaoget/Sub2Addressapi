@@ -17,4 +17,13 @@ payload:
   - DOMAIN-SUFFIX,scottplot.net
   - DOMAIN-SUFFIX,mius.uk
   - DOMAIN-SUFFIX,imetyou.top
+  - DOMAIN-SUFFIX,plyr.io
+  - DOMAIN-SUFFIX,sagcoreedge.com
+  - DOMAIN-SUFFIX,strpst.com
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,tapioni.com
+  - DOMAIN-SUFFIX,mushroomtrack.com
+  - DOMAIN-SUFFIX,mnaspm.com
+  - DOMAIN-SUFFIX,magsrv.com
+  - DOMAIN-SUFFIX,jable.tv
   - IP-CIDR,13.94.47.0/24
