@@ -1,0 +1,10 @@
+# NAME: YouTube
+# AUTHOR: haohaoget
+# UPDATED: 2024-10-13 16:14:51
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 179
+# TOTAL: 183
+payload:
+  - DOMAIN-SUFFIX,video.pscp.tv
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,mushroomtrack.com
