@@ -8,5 +8,5 @@ payload:
   - DOMAIN-SUFFIX,video.pscp.tv
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,mushroomtrack.com
-  - DOMAIN-SUFFIX,objects.githubusercontent.com
-  
+  - DOMAIN,objects.githubusercontent.com
+  - DOMAIN,stream.embyplus.org
