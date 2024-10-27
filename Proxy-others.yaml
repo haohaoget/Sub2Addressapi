@@ -25,4 +25,5 @@ payload:
   - DOMAIN-SUFFIX,mnaspm.com
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,jable.tv
+  - DOMAIN-SUFFIX,skyearth.xyz
   - IP-CIDR,13.94.47.0/24
