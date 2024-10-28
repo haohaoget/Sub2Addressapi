@@ -9,6 +9,7 @@
 # TOTAL: 8
 payload:
   - DOMAIN-SUFFIX,editorialmanager.com
+  - DOMAIN-SUFFIX,metacubex.one
   - DOMAIN-SUFFIX,ipinfo.io
   - DOMAIN-SUFFIX,services.googleapis.cn
   - DOMAIN-SUFFIX,annas-archive.org
