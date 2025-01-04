@@ -12,6 +12,7 @@ payload:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,clarivate.com
   - DOMAIN-SUFFIX,bincloud.top
+  - DOMAIN-SUFFIX,service.signalr.net
   - DOMAIN-SUFFIX,dcg.microsoft.com
   - DOMAIN-SUFFIX,onepetro.org
   - DOMAIN-SUFFIX,istoreos.com
