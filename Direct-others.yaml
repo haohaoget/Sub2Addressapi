@@ -9,6 +9,8 @@
 # TOTAL: 4
 payload:
   - DOMAIN-KEYWORD,tailscale
+  - DOMAIN-SUFFIX,services.googleapis.cn
+  - DOMAIN-SUFFIX,googleapis.cn
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,clarivate.com
   - DOMAIN-SUFFIX,clarivate.cn
