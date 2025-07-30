@@ -18,6 +18,8 @@ payload:
   - DOMAIN,dns9.quad9.net
   - DOMAIN,doh.pub
   - DOMAIN,one.one.one.one
+  - DOMAIN-SUFFIX,iqiq.io
+  - DOMAIN-SUFFIX,passcloud.xyz
   - IP-CIDR,1.1.1.1/32
   - IP-CIDR,1.0.0.1/32
   - IP-CIDR,8.8.4.4/32
