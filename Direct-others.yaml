@@ -14,7 +14,9 @@ payload:
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,clarivate.com.cn
   - DOMAIN-SUFFIX,clarivate.com
+  - DOMAIN-SUFFIX,clarivate.net
   - DOMAIN-SUFFIX,clarivate.cn
+  - DOMAIN-SUFFIX,webofknowledge.com
   - DOMAIN-SUFFIX,webofscience.com
   - DOMAIN-SUFFIX,sciencedirect.com
   - DOMAIN-SUFFIX,bincloud.top
