@@ -20,9 +20,9 @@ payload:
   - DOMAIN-SUFFIX,webofscience.com
   - DOMAIN-SUFFIX,sciencedirect.com
   - DOMAIN-SUFFIX,bincloud.top
-  # - DOMAIN-SUFFIX,service.signalr.net
+  - DOMAIN-SUFFIX,service.signalr.net
   - DOMAIN-SUFFIX,dcg.microsoft.com
-  - DOMAIN-SUFFIX,mobile.events.data.microsoft.com
+  # - DOMAIN-SUFFIX,mobile.events.data.microsoft.com
   - DOMAIN-SUFFIX,onepetro.org
   - DOMAIN-SUFFIX,istoreos.com
   - DOMAIN-SUFFIX,connects.icu
