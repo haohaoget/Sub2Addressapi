@@ -4,6 +4,7 @@
 payload:
   - DOMAIN-KEYWORD,scholar.google.com
   # Google AI Studio
+  - DOMAIN,fonts.gstatic.com
   - DOMAIN,ai.google.dev
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN,alkalicore-pa.clients6.google.com
