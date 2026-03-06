@@ -12,8 +12,6 @@ payload:
   - DOMAIN-SUFFIX,editorialmanager.com
   - DOMAIN-SUFFIX,metacubex.one
   - DOMAIN-SUFFIX,ipinfo.io
-  - DOMAIN-SUFFIX,googleapis.cn
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,annas-archive.org
   - DOMAIN-SUFFIX,msftstatic.com  
   - DOMAIN-SUFFIX,nelreports.net
