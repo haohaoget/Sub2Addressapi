@@ -8,6 +8,8 @@
 # IP-CIDR: 1
 # TOTAL: 8
 payload:
+  - DOMAIN-SUFFIX,googleapis.cn
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,bsbsb.top
   - DOMAIN-SUFFIX,editorialmanager.com
   - DOMAIN-SUFFIX,metacubex.one
