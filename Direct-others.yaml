@@ -30,4 +30,4 @@ payload:
   - DOMAIN-SUFFIX,nextpt.net
   - DOMAIN-SUFFIX,ipw.cn
   - DOMAIN,learn.microsoft.com
-  - DOMAIN-SUFFIX, steamserver.net, DIRECT
+  - DOMAIN-SUFFIX,steamserver.net
