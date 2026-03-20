@@ -19,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,webofknowledge.com
   - DOMAIN-SUFFIX,webofscience.com
   - DOMAIN-SUFFIX,sciencedirect.com
+  - DOMAIN-SUFFIX,sciencedirectassets.com
   - DOMAIN-SUFFIX,bincloud.top
   - DOMAIN-SUFFIX,service.signalr.net
   - DOMAIN-SUFFIX,dcg.microsoft.com
