@@ -8,7 +8,7 @@
 # IP-CIDR: 0
 # TOTAL: 4
 payload:
-  - DOMAIN-KEYWORD,tailscale
+  # - DOMAIN-KEYWORD,tailscale
   # - DOMAIN-SUFFIX,services.googleapis.cn
   # - DOMAIN-SUFFIX,googleapis.cn
   # - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
