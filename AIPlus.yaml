@@ -6,6 +6,7 @@ payload:
   # Google AI Studio
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,ai.google.dev
+  - DOMAIN,www.google.com
   - DOMAIN-SUFFIX,makersuite.google.com
   - DOMAIN,alkalicore-pa.clients6.google.com
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
