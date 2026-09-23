@@ -9,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,mushroomtrack.com
   - DOMAIN,objects.githubusercontent.com
+  - DOMAIN,release-assets.githubusercontent.com
   - DOMAIN,stream.embyplus.org
   - DOMAIN,speed.cloudflare.com
   - DOMAIN-SUFFIX,skyearth.xyz
