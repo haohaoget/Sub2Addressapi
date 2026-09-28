@@ -25,6 +25,7 @@ payload:
   - DOMAIN-SUFFIX,dcg.microsoft.com
   # - DOMAIN-SUFFIX,mobile.events.data.microsoft.com
   - DOMAIN-SUFFIX,onepetro.org
+  - DOMAIN-SUFFIX,silverchair.com
   - DOMAIN-SUFFIX,istoreos.com
   - DOMAIN-SUFFIX,connects.icu
   - DOMAIN-SUFFIX,nextpt.net
