@@ -32,3 +32,4 @@ payload:
   - DOMAIN-SUFFIX,ipw.cn
   - DOMAIN,learn.microsoft.com
   - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,mathworks.com
